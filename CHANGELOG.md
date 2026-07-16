@@ -1,3 +1,9 @@
+## [0.1.1](https://github.com/covalida/COM-CorporateIdentity/compare/v0.1.0...v0.1.1) (2026-07-16)
+
+### 🐛 Bug Fixes
+
+* **theme:** replaced hero glow with mint halo ([bfc67ea](https://github.com/covalida/COM-CorporateIdentity/commit/bfc67ea00570f4310cb7898c51a428888e0efa1b)), closes [#CDE9E6](https://github.com/covalida/COM-CorporateIdentity/issues/CDE9E6)
+
 ## [0.1.0](https://github.com/covalida/COM-CorporateIdentity/compare/v0.0.0...v0.1.0) (2026-07-16)
 
 ### 🚀 Features
