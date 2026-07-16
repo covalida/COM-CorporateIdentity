@@ -1,3 +1,9 @@
+## [0.2.0](https://github.com/covalida/COM-CorporateIdentity/compare/v0.1.1...v0.2.0) (2026-07-16)
+
+### 🚀 Features
+
+* **tokens:** added parallel OKLCH color notation ([91ed34f](https://github.com/covalida/COM-CorporateIdentity/commit/91ed34f5fd65116885df750ce36498a3fd42eeb8))
+
 ## [0.1.1](https://github.com/covalida/COM-CorporateIdentity/compare/v0.1.0...v0.1.1) (2026-07-16)
 
 ### 🐛 Bug Fixes
