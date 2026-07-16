@@ -48,6 +48,11 @@ jobs:
       run-tests: false
       run-audit: true
       audit-level: 'high'
+      # Audit only shippable dependencies. The static site's sole runtime
+      # dependency is @fontsource/montserrat; every advisory in this tree is
+      # in the dev/build toolchain (Vite/esbuild dev server, markdownlint),
+      # which never ships in the deployed output.
+      audit-production-only: true
       upload-artifacts: false
 
   # ---------------------------------------------------------------------------
