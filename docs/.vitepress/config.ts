@@ -41,7 +41,7 @@ export default defineConfig({
 
   themeConfig: {
     logo: { light: '/brand/covalida-icon.svg', dark: '/brand/covalida-icon.svg' },
-    siteTitle: 'Brand Guide',
+    siteTitle: 'COVALIDA Brand Guide',
 
     nav: [
       { text: 'Overview', link: '/' },
