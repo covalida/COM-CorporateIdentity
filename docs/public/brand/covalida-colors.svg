@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" font-family="Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+<rect x="1" y="1" width="1198" height="358" rx="24" fill="#FFFFFF" stroke="#E5EAEA" stroke-width="2"/>
+<text x="48" y="66" font-size="34" font-weight="800" fill="#2F4F4F">Color Palette</text>
+<text x="48" y="94" font-size="16" font-weight="500" fill="#6F7D7D">COVALIDA &#183; digital &#183; HEX is authoritative (no CMYK / Pantone)</text>
+
+<!-- Deep Teal -->
+<rect x="48" y="124" width="201" height="116" rx="14" fill="#008080"/>
+<text x="48" y="284" font-size="21" font-weight="700" fill="#2F4F4F">Deep Teal</text>
+<text x="48" y="310" font-size="16" font-weight="600" fill="#6F7D7D" font-family="'SFMono-Regular', Consolas, monospace">#008080</text>
+<text x="48" y="334" font-size="14" font-weight="500" fill="#94A1A2">Primary</text>
+
+<!-- Light Teal -->
+<rect x="273" y="124" width="201" height="116" rx="14" fill="#20B2AA"/>
+<text x="273" y="284" font-size="21" font-weight="700" fill="#2F4F4F">Light Teal</text>
+<text x="273" y="310" font-size="16" font-weight="600" fill="#6F7D7D" font-family="'SFMono-Regular', Consolas, monospace">#20B2AA</text>
+<text x="273" y="334" font-size="14" font-weight="500" fill="#94A1A2">Accent</text>
+
+<!-- Deep Petrol -->
+<rect x="498" y="124" width="201" height="116" rx="14" fill="#155D5B"/>
+<text x="498" y="284" font-size="21" font-weight="700" fill="#2F4F4F">Deep Petrol</text>
+<text x="498" y="310" font-size="16" font-weight="600" fill="#6F7D7D" font-family="'SFMono-Regular', Consolas, monospace">#155D5B</text>
+<text x="498" y="334" font-size="14" font-weight="500" fill="#94A1A2">Deep / icons</text>
+
+<!-- Deep Slate Gray -->
+<rect x="723" y="124" width="201" height="116" rx="14" fill="#2F4F4F"/>
+<text x="723" y="284" font-size="21" font-weight="700" fill="#2F4F4F">Deep Slate Gray</text>
+<text x="723" y="310" font-size="16" font-weight="600" fill="#6F7D7D" font-family="'SFMono-Regular', Consolas, monospace">#2F4F4F</text>
+<text x="723" y="334" font-size="14" font-weight="500" fill="#94A1A2">Text &amp; wordmark</text>
+
+<!-- Light Mint -->
+<rect x="948" y="124" width="201" height="116" rx="14" fill="#CDE9E6" stroke="#D9DEE2" stroke-width="1.5"/>
+<text x="948" y="284" font-size="21" font-weight="700" fill="#2F4F4F">Light Mint</text>
+<text x="948" y="310" font-size="16" font-weight="600" fill="#6F7D7D" font-family="'SFMono-Regular', Consolas, monospace">#CDE9E6</text>
+<text x="948" y="334" font-size="14" font-weight="500" fill="#94A1A2">Surface</text>
+</svg>

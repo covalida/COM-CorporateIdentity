@@ -1,2 +1,49 @@
+# ──────────────────────────────────────────────
+# COVALIDA — Brand Guide
+# ──────────────────────────────────────────────
+
 # Ignore all drafts
 .drafts
+
+# Dependencies
+node_modules/
+
+# VitePress
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+
+# Generated raster assets (produced by `npm run generate:assets`)
+docs/public/downloads/png/
+docs/public/favicon-*.png
+docs/public/apple-touch-icon.png
+docs/public/icon-*.png
+docs/public/og-image.png
+
+# npm
+npm-debug.log*
+.npm/
+
+# Environment & Secrets
+.env
+.env.*
+*.local
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-*
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+# Temp & Logs
+*.tmp
+*.bak
+*.log

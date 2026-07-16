@@ -1,0 +1,563 @@
+/**
+ * COVALIDA Brand Guide – Corporate Identity Theme
+ * Design tokens derived from the finished brand assets.
+ */
+
+/* ─── Brand Color Scale (Teal) ─── */
+:root {
+  --cv-teal-50: #e8f4f4;
+  --cv-teal-100: #cde9e6;   /* Brand: Light Mint tint */
+  --cv-teal-200: #9bd3ce;
+  --cv-teal-300: #5fb8b1;
+  --cv-teal-400: #20b2aa;   /* Brand: Light Teal (accent) */
+  --cv-teal-500: #008080;   /* Brand: Deep Teal (primary) */
+  --cv-teal-600: #0a6e6e;
+  --cv-teal-700: #155d5b;   /* Brand: Deep Petrol */
+  --cv-teal-800: #124b49;
+  --cv-teal-900: #0e3a38;
+
+  /* Core brand colors (named) */
+  --cv-primary: #008080;    /* Deep Teal */
+  --cv-accent: #20b2aa;     /* Light Teal */
+  --cv-petrol: #155d5b;     /* Deep Petrol */
+  --cv-slate: #2f4f4f;      /* Deep Slate Gray — wordmark & text */
+  --cv-mint: #cde9e6;       /* Light Mint tint */
+
+  /* Signature icon gradient */
+  --cv-gradient: linear-gradient(135deg, #2db3a4 0%, #25a699 38%, #1a847f 68%, #155d5b 100%);
+
+  /* Neutral Gray Scale */
+  --cv-gray-50: #f6f8f8;
+  --cv-gray-100: #eceff0;
+  --cv-gray-200: #d7dedf;
+  --cv-gray-300: #b9c3c4;
+  --cv-gray-400: #94a1a2;
+  --cv-gray-500: #6f7d7d;
+  --cv-gray-600: #566262;
+  --cv-gray-700: #3f4a4a;
+  --cv-gray-800: #2a3232;
+  --cv-gray-900: #171d1d;
+
+  /* Brand Neutrals */
+  --brand-white: #ffffff;
+  --brand-light: #f6f8f8;
+  --brand-dark: #2f4f4f;
+  --brand-black: #171d1d;
+
+  /* VitePress Brand Mapping */
+  --vp-c-brand-1: #008080;
+  --vp-c-brand-2: #0a6e6e;
+  --vp-c-brand-3: #155d5b;
+  --vp-c-brand-soft: rgba(0, 128, 128, 0.14);
+
+  /* VitePress Button Overrides */
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #ffffff;
+  --vp-button-brand-bg: #008080;
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: #ffffff;
+  --vp-button-brand-hover-bg: #0a6e6e;
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: #ffffff;
+  --vp-button-brand-active-bg: #155d5b;
+
+  /* Home hero brand gradient */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #008080 30%, #20b2aa);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #20b2aa 30%, #155d5b 70%);
+  --vp-home-hero-image-filter: blur(48px);
+
+  /* Semantic Colors */
+  --brand-success: #22c55e;
+  --brand-warning: #eab308;
+  --brand-error: #ef4444;
+  --brand-info: #008080;
+
+  /* Custom Block: tip → Success (Green) */
+  --vp-custom-block-tip-border: #22c55e;
+  --vp-custom-block-tip-bg: rgba(34, 197, 94, 0.08);
+  --vp-custom-block-tip-code-bg: rgba(34, 197, 94, 0.12);
+
+  /* Custom Block: info → Teal (Brand) */
+  --vp-custom-block-info-border: #008080;
+  --vp-custom-block-info-bg: rgba(0, 128, 128, 0.08);
+  --vp-custom-block-info-code-bg: rgba(0, 128, 128, 0.12);
+
+  /* Custom Block: warning → Amber */
+  --vp-custom-block-warning-border: #eab308;
+  --vp-custom-block-warning-bg: rgba(234, 179, 8, 0.08);
+  --vp-custom-block-warning-code-bg: rgba(234, 179, 8, 0.12);
+
+  /* Custom Block: danger → Red */
+  --vp-custom-block-danger-border: #ef4444;
+  --vp-custom-block-danger-bg: rgba(239, 68, 68, 0.08);
+  --vp-custom-block-danger-code-bg: rgba(239, 68, 68, 0.12);
+
+  /* Typography — Montserrat house font (self-hosted via @fontsource) */
+  --vp-font-family-base: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --vp-font-family-mono: ui-monospace, "SF Mono", "Cascadia Code", "Fira Code",
+    Consolas, "Courier New", monospace;
+
+  /* Layout */
+  --vp-layout-max-width: 1440px;
+  --vp-doc-width: 1000px;
+  --vp-sidebar-width: 320px;
+  --vp-aside-width: 272px;
+}
+
+/* ─── Dark Mode ─── */
+.dark {
+  --vp-c-brand-1: #35bdb2;
+  --vp-c-brand-2: #20b2aa;
+  --vp-c-brand-3: #66d0c8;
+  --vp-c-brand-soft: rgba(32, 178, 170, 0.16);
+
+  --vp-button-brand-bg: #20b2aa;
+  --vp-button-brand-text: #06201f;
+  --vp-button-brand-hover-bg: #35bdb2;
+  --vp-button-brand-hover-text: #06201f;
+  --vp-button-brand-active-bg: #008080;
+  --vp-button-brand-active-text: #ffffff;
+
+  --brand-info: #35bdb2;
+  --vp-custom-block-info-border: #20b2aa;
+  --vp-custom-block-info-bg: rgba(32, 178, 170, 0.1);
+
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #35bdb2 30%, #66d0c8);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #20b2aa 30%, #0e3a38 70%);
+}
+
+/* ─── Headings ─── */
+.vp-doc h1 {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.vp-doc h2 {
+  font-weight: 700;
+  padding-bottom: 8px;
+  border-bottom: 3px solid var(--cv-teal-500);
+  letter-spacing: -0.01em;
+}
+
+.vp-doc h3 {
+  font-weight: 700;
+}
+
+/* ─── Hero Section ─── */
+.VPHero .VPImage {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+/* ─── Color Swatch Component ─── */
+.color-swatch {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.85em;
+  font-weight: 600;
+  border: 1px solid var(--vp-c-divider);
+}
+
+.color-swatch .dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+/* ─── Swatch Grid (color cards) ─── */
+.swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.swatch-card {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-soft);
+}
+
+.swatch-card .chip {
+  height: 96px;
+}
+
+.swatch-card .meta {
+  padding: 12px 14px;
+}
+
+.swatch-card .meta .name {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.swatch-card .meta .hex {
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.8rem;
+  color: var(--vp-c-text-2);
+  margin-top: 2px;
+}
+
+.swatch-card .meta .use {
+  font-size: 0.78rem;
+  color: var(--vp-c-text-3);
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+/* ─── Color Scale Bar ─── */
+.color-scale {
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 56px;
+  margin: 16px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.color-scale > div {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  padding: 6px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  font-family: var(--vp-font-family-mono);
+}
+
+/* ─── Logo Display Stages ─── */
+.logo-stage {
+  border-radius: 16px;
+  padding: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+.logo-stage.light {
+  background: var(--cv-teal-50);
+}
+
+.logo-stage.dark {
+  background: var(--cv-teal-900);
+}
+
+.logo-stage.mint {
+  background: var(--cv-mint);
+}
+
+.logo-stage img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ─── Pillar Architecture Grid ─── */
+.pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin: 28px 0;
+}
+
+.pillar-card {
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-soft);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.pillar-card:hover {
+  border-color: var(--cv-teal-400);
+  transform: translateY(-2px);
+}
+
+.pillar-card img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 12px;
+}
+
+.pillar-card h3 {
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border: none;
+}
+
+.pillar-card .kicker {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cv-teal-500);
+}
+
+.pillar-card p {
+  font-size: 0.86rem;
+  color: var(--vp-c-text-2);
+  line-height: 1.5;
+  margin: 8px 0 0;
+}
+
+.pillar-card .standards {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.pillar-card .standards span {
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--cv-teal-100);
+  color: var(--cv-teal-800);
+}
+
+.dark .pillar-card .standards span {
+  background: rgba(32, 178, 170, 0.16);
+  color: var(--cv-teal-200);
+}
+
+/* ─── Icon Gallery ─── */
+.icon-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.icon-gallery figure {
+  margin: 0;
+  text-align: center;
+  padding: 16px;
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+}
+
+.icon-gallery img {
+  width: 72px;
+  height: 72px;
+}
+
+.icon-gallery figcaption {
+  margin-top: 8px;
+  font-size: 0.78rem;
+  color: var(--vp-c-text-2);
+  font-weight: 600;
+}
+
+/* ─── Do / Don't Cards ─── */
+.dont-card {
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  background: rgba(239, 68, 68, 0.06);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.dont-card .label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--brand-error);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 8px;
+}
+
+.do-card {
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  background: rgba(34, 197, 94, 0.06);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.do-card .label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #15803d;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 8px;
+}
+
+.dark .do-card .label {
+  color: #4ade80;
+}
+
+/* ─── Contrast Badge ─── */
+.contrast-pass {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.75em;
+  font-weight: 700;
+  background: rgba(34, 197, 94, 0.12);
+  color: #15803d;
+}
+
+.contrast-fail {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.75em;
+  font-weight: 700;
+  background: rgba(239, 68, 68, 0.12);
+  color: #b91c1c;
+}
+
+/* ─── Download Card Grid ─── */
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.download-card {
+  border-radius: 12px;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-soft);
+  overflow: hidden;
+}
+
+.download-card .preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 140px;
+  padding: 24px;
+  background: var(--cv-teal-50);
+}
+
+.dark .download-card .preview {
+  background: var(--cv-teal-900);
+}
+
+.download-card .preview.dark {
+  background: var(--cv-teal-900);
+}
+
+.download-card img {
+  max-width: 100%;
+  max-height: 90px;
+  height: auto;
+}
+
+.download-card .body {
+  padding: 14px 16px;
+}
+
+.download-card .body .title {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.download-card .links {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.8rem;
+}
+
+.download-card .links a {
+  font-weight: 600;
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: var(--cv-teal-100);
+  color: var(--cv-teal-800);
+  text-decoration: none;
+}
+
+.download-card .links a:hover {
+  background: var(--cv-teal-200);
+}
+
+.dark .download-card .links a {
+  background: rgba(32, 178, 170, 0.16);
+  color: var(--cv-teal-200);
+}
+
+/* ─── Cards / Feature Grid ─── */
+.VPFeatures .VPFeature {
+  border-radius: 12px !important;
+}
+
+/* ─── Wide Content Layout ─── */
+@media (min-width: 1440px) {
+  .VPDoc .container {
+    max-width: 100% !important;
+  }
+  .VPDoc .content {
+    max-width: 1100px !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .VPDoc .content {
+    max-width: 1200px !important;
+  }
+}
+
+/* ─── Table Styling ─── */
+.vp-doc table {
+  width: 100%;
+  display: table;
+  overflow-x: auto;
+}
+
+.vp-doc th {
+  background: var(--vp-c-bg-soft);
+  font-weight: 700;
+}
+
+/* ─── Sidebar / Nav Brand Accent ─── */
+.VPNavBar .title {
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+/* ─── Search Bar Width ─── */
+.VPNavBarSearch {
+  padding-left: 16px !important;
+}
+
+.VPNavBarSearch .DocSearch-Button,
+.VPNavBarSearch .search-button {
+  min-width: 240px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (min-width: 960px) {
+  .VPNavBarSearch .DocSearch-Button,
+  .VPNavBarSearch .search-button {
+    min-width: 300px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .VPNavBarSearch .DocSearch-Button,
+  .VPNavBarSearch .search-button {
+    min-width: 380px;
+  }
+}
