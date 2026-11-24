@@ -42,13 +42,33 @@ updates:
     labels:
       - "dependencies"
       - "npm"
+    # One PR per run for all minor and patch updates, which
+    # dependabot-maintenance.yml merges once nodejs-pr.yml has passed.
+    # A grouped PR counts as its strictest update and the gate treats a
+    # 0.x minor as major, so 0.x packages stay out of this group and get
+    # their own PR - keep exclude-patterns in sync when a package reaches
+    # 1.0.0 or a new 0.x dependency is added. Majors fall through to the
+    # named groups below and stay open for review.
     groups:
+      npm-minor-and-patch:
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "markdownlint-cli2"  # 0.x
+          - "sharp"              # 0.x
+        update-types:
+          - "minor"
+          - "patch"
       vitepress:
         patterns:
           - "vitepress"
+        update-types:
+          - "major"
       dev-tooling:
         patterns:
           - "markdownlint-cli2"
           - "linkinator"
           - "rimraf"
           - "sharp"
+        update-types:
+          - "major"
